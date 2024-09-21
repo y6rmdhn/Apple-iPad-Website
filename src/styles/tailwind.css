@@ -1,0 +1,111 @@
+@import './font.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .swiper{
+        @apply w-full h-[750px] px-custom-calc;
+    }
+
+    #mySwiperNav{
+        @apply px-0;
+    }
+
+    #swiperSlide{
+        @apply w-[78px] flex justify-center;
+    }
+
+    .swiper-slide{
+        @apply w-[372px] flex;
+    }
+
+    .swiper-slide.lebar{
+        @apply w-[260px];
+    }
+
+    #swiperBook{
+        @apply box-border;
+    }
+
+    .btn-next{
+        @apply h-9 w-9 rounded-full flex justify-center items-start bg-[#E2E2E6];
+    }
+    .btn-prev{
+        @apply h-9 w-9 rounded-full flex justify-center items-start bg-[#E2E2E6];
+    }
+
+    .btn-next.swiper-button-disabled, .btn-prev.swiper-button-disabled{
+        @apply opacity-40;
+    }
+
+    .swiper-slide.ipad{
+        @apply pt-3;
+    }
+
+    .prev.swiper-button-disabled, .next.swiper-button-disabled{
+        @apply opacity-20;
+    }
+
+    .mySwiper{
+        @apply h-auto;
+    }
+
+    .grid-list{
+        grid-template-rows: minmax(158px, max-content) minmax(86px, max-content) minmax(112px, max-content) minmax(112px, max-content) minmax(112px, max-content);
+    }
+
+    .accordion-footer{
+        @apply max-h-0;
+    }
+    
+    .line-top, .line-bottom {
+        @apply transition-all transform duration-500 ease-custom-ease;
+    }
+
+    .mobile-menu.active .line-top {
+        @apply translate-y-0 -rotate-45;
+    }
+    
+    #menu-mobile-list {
+        @apply invisible
+      }
+      
+      #menu-mobile-list.opacity-100 {
+        @apply visible
+      }
+      
+
+    .mobile-menu.active .line-bottom {
+        @apply translate-y-0 rotate-45;
+    }
+
+    .scroll { 
+        @apply transition-all duration-500 ease-custom-ease;
+    }
+
+    .scroll.active {
+        @apply h-[100vh];
+    }
+
+    .hiddenSvgClass{
+        @apply opacity-0;
+    }
+
+    @screen max-lg {
+        .swiper-slide{
+            @apply w-[344px];
+        }
+
+        .swiper{
+            @apply h-[700px];
+        }
+
+        .mySwiper{
+            @apply h-auto;
+        }
+        .grid-list{
+            grid-template-rows: minmax(178px, max-content) minmax(86px, max-content) minmax(112px, max-content) minmax(112px, max-content) minmax(112px, max-content);
+        }
+    }
+}

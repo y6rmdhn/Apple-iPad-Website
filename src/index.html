@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple iPad Indonesia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="relative bg-background w-full font-sf">
+        <nav class="max-w-[996px] h-[44px] mx-auto flex justify-between px-[22px]">
+            <div class="relative z-[1500] transition-opacity duration-500 ease-custom-ease" id="hiddenSvg">
+                <svg class="w-[16px] h-[44px] z-[1500]" viewBox="0 0 14 44" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z">
+                    </path>
+                </svg>
+            </div>
+            <ul
+                class="flex justify-between items-center w-full h-full mx-[54px] text-[12px] max-md:hidden relative z-[6000]">
+                <li>Mac</li>
+                <li>iPad</li>
+                <li>iPhone</li>
+                <li>Watch</li>
+                <li>AirPods</li>
+                <li>TV & Rumah</li>
+                <li>Hiburan</li>
+                <li>Dukungan</li>
+                <li>Tempat Membeli</li>
+            </ul>
+
+            <ul id="menu-mobile-list"
+                class="hidden max-md:flex absolute  flex-col items-start mx-[54px] top-[45px] gap-[10px] text-[28px] z-[6000] opacity-0 transition-all duration-500 delay-300 ease-custom-ease">
+                <li>Mac</li>
+                <li>iPad</li>
+                <li>iPhone</li>
+                <li>Watch</li>
+                <li>AirPods</li>
+                <li>TV & Rumah</li>
+                <li>Hiburan</li>
+                <li>Dukungan</li>
+                <li>Tempat Membeli</li>
+            </ul>
+
+            <div class="flex gap-5 items-center h-full">
+                <svg id="searchSvgHidden"
+                    class="h-[44px] w-[36px] relative z-[1500]  transition-opacity duration-500 ease-custom-ease"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 44">
+                    <path
+                        d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                    </path>
+                </svg>
+
+                <div id="menu-toggle"
+                    class="mobile-menu relative z-[1500] w-full h-full hidden flex-col items-center justify-center cursor-pointer max-md:flex">
+                    <span class="absolute w-4 h-[1px] bg-black-Apple -translate-y-[4px] line-top"></span>
+                    <span class="absolute w-4 h-[1px] bg-black-Apple translate-y-[3px] line-bottom"></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- nav click mobile -->
+        <nav id="scroll-target" class="bg-background w-full h-[44px] absolute top-0 scroll z-30">
+        </nav>
+
+
+        <nav
+            class="relative max-w-[996px] pb-[30px] px-[80px] mt-[20px] mx-auto flex justify-center w-full max-md:px-[30px] z-0">
+            <div class="swiper mySwiper" id="mySwiperNav">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="swiperSlide">
+                        <div class="flex flex-col items-center w-full">
+                            <img class="h-[52px] w-auto" src="./assets/ipadpro_light__bbws9fokxn3m_large.svg"
+                                alt="ipad pro">
+                            <p class="text-center mt-[10px] text-[12px]">iPad Pro</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" id="swiperSlide">
+                        <div class="flex flex-col items-center w-full">
+                            <img class="h-[52px] w-auto" src="./assets/ipadpro_light__bbws9fokxn3m_large.svg"
+                                alt="ipad pro">
+                            <p class="text-center mt-[10px] text-[12px]">iPad Air</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" id="swiperSlide">
+                        <div class="flex flex-col items-center w-full">
+                            <img class="h-[52px] w-auto" src="./assets/pa_ipadair_gen5_light__cboe3o98m36u_large.svg"
+                                alt="ipad pro">
+                            <p class="text-center mt-[10px] text-[12px]">iPad</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" id="swiperSlide">
+                        <div class="flex flex-col items-center w-full">
+                            <img class="h-[52px] w-auto" src="./assets/ipadmini_light__chl9hj51b9qq_large.svg"
+                                alt="ipad pro">
+                            <p class="text-center mt-[10px] text-[12px]">iPad mini</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" id="swiperSlide">
+                        <div class="flex flex-col items-center w-full">
+                            <img class="h-[52px] w-auto" src="./assets/ipad_compare_light__29tc9jjpoeqe_large.svg"
+                                alt="ipad pro">
+                            <p class="text-center mt-[10px] text-[12px]">Bandingkan</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" id="swiperSlide">
+                        <div class="flex flex-col items-center w-full">
+                            <img class="h-[52px] w-auto" src="./assets/apple_pencil_light__kv36e49avuq2_large.svg"
+                                alt="ipad pro">
+                            <p class="text-center mt-[10px] text-[12px]">Apple Pencil</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" id="swiperSlide">
+                        <div class="flex flex-col items-center w-full">
+                            <img class="h-[52px] w-auto" src="./assets/keyboard_light__f5t6yntcyq2q_large.svg"
+                                alt="ipad pro">
+                            <p class="text-center mt-[10px] text-[12px]">Papan ketik</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" id="swiperSlide">
+                        <div class="flex flex-col items-center w-full">
+                            <img class="h-[52px] w-auto" src="./assets/ipados_light__ebqgefp11ogi_large.svg"
+                                alt="ipad pro">
+                            <p class="text-center mt-[10px] text-[12px]">iPadOS 18</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute right-[30px] bottom-[55px] max-md:right-[3px]">
+                <button class="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+
+                </button>
+            </div>
+            <div class="absolute left-[30px] bottom-[55px] max-md:left-[3px]">
+                <button class="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero iPad-->
+    <main>
+        <section id="ipad" class="w-full pt-[90px] pb-[150px] max-sm-1:pb-[90px]">
+            <div
+                class="max-w-[1200px] mx-auto w-[87.5vw] flex justify-between items-end text-black-Apple pb-[80px] max-md:flex-col max-md:items-start max-sm-1:pb-[60px]">
+                <h1 class="text-[56px] max-lg:text-[46px] font-semibold">iPad</h1>
+                <p class="text-2xl max-lg:text-[18px] font-semibold">Sentuh, gambar, dan ketik di satu perangkat
+                    istimewa.</p>
+            </div>
+            <div class="flex justify-center items-center mx-auto">
+                <iframe class="overflow-hidden rounded-[44px] w-[87.5%] h-[85vh] max-md:h-[680px]"
+                    src="https://www.youtube.com/embed/UjmaxCyJBc4?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=UjmaxCyJBc4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- kenali ipad -->
+        <section id="kenali-ipad" class="w-full pb-[150px] max-sm-1:pb-[90px]">
+            <div
+                class="flex justify-start items-end text-black-Apple pb-[50px] max-w-[1200px] mx-auto w-[87.5vw] max-lg:pb-[20px]">
+                <h1 class="text-[56px] max-lg:text-[46px] font-semibold max-sm-1:text-[32px]">Kenali iPad lebih dalam.
+                </h1>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper max-sm-1:h-[550px]" id="mySwiper1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides 1-->
+                    <div class="swiper-slide max-sm-1:w-[260px]">
+                        <div
+                            class="bg-[url('/src/assets/slider/fc_productivity__d55aee5so6ky_large.jpg')] my-auto w-full cursor-pointer hover:scale-102 transition-all duration-500 bg-no-repeat rounded-[28px] bg-cover p-[32px] h-[680px] max-lg:h-[628px] max-sm-1:w-[260px] max-sm-1:h-[505px]">
+                            <div class="flex flex-col justify-between h-full">
+                                <div class="flex flex-col">
+                                    <p class="text-white font-semibold text-base mb-[8px] max-lg:text-[14px] ">
+                                        Produktivitas</p>
+                                    <p
+                                        class="text-white font-semibold text-[28px] leading-tight max-lg:text-[25px] max-sm-1:text-[20px]">
+                                        Tempat kerja anda
+                                        <br />
+                                        bisa di mana saja.
+                                    </p>
+                                </div>
+                                <button
+                                    class="h-9 w-9 rounded-full flex justify-center items-center bg-[#37373A] ml-auto"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        class="h-[18px] w-[18px] text-[#FEF5F5] fill-current"
+                                        class="card-cta-modal-button-small-icon card-modal-button-small-icon">
+                                        <path
+                                            d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z">
+                                        </path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="swiper-slide max-sm-1:w-[260px]">
+                        <div
+                            class="bg-[url('/src/assets/slider/fc_creativity__gcfv7x90x42u_large.jpg')] my-auto w-full cursor-pointer hover:scale-102 transition-all duration-500 bg-no-repeat rounded-[28px] bg-cover p-[32px] h-[680px] max-lg:h-[628px] max-sm-1:w-[260px] max-sm-1:h-[505px]">
+                            <div class="flex flex-col justify-between h-full">
+                                <div class="flex flex-col">
+                                    <p class="text-white font-semibold text-base mb-[8px] max-lg:text-[14px]">
+                                        Kreatifitas</p>
+                                    <p
+                                        class="text-white font-semibold text-[28px] leading-tight max-lg:text-[25px] max-sm-1:text-[20px]">
+                                        Bebaskan
+                                        <br />
+                                        jiwa seni Anda.
+                                    </p>
+                                </div>
+                                <button
+                                    class="h-9 w-9 rounded-full flex justify-center items-center bg-[#37373A] ml-auto"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        class="h-[18px] w-[18px] text-[#FEF5F5] fill-current"
+                                        class="card-cta-modal-button-small-icon card-modal-button-small-icon">
+                                        <path
+                                            d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z">
+                                        </path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="swiper-slide max-sm-1:w-[260px]">
+                        <div
+                            class="bg-[url('/src/assets/slider/fc_learning__es1tt702bf6u_large.jpg')] my-auto w-full cursor-pointer hover:scale-102 transition-all duration-500 bg-no-repeat rounded-[28px] bg-cover p-[32px] h-[680px] max-lg:h-[628px] max-sm-1:w-[260px] max-sm-1:h-[505px]">
+                            <div class="flex flex-col justify-between h-full">
+                                <div class="flex flex-col">
+                                    <p class="text-white font-semibold text-base mb-[8px] max-lg:text-[14px]">Belajar
+                                    </p>
+                                    <p
+                                        class="text-white font-semibold text-[28px] leading-tight max-lg:text-[25px] max-sm-1:text-[20px]">
+                                        Ruang kelas Anda
+                                        <br />
+                                        bisa di mana saja.
+                                    </p>
+                                </div>
+                                <button
+                                    class="h-9 w-9 rounded-full flex justify-center items-center bg-[#37373A] ml-auto"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        class="h-[18px] w-[18px] text-[#FEF5F5] fill-current"
+                                        class="card-cta-modal-button-small-icon card-modal-button-small-icon">
+                                        <path
+                                            d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z">
+                                        </path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 4 -->
+                    <div class="swiper-slide max-sm-1:w-[260px]">
+                        <div
+                            class="bg-[url('/src/assets/slider/chip__cpj93oio1oya_large.jpg')] my-auto w-full cursor-pointer hover:scale-102 transition-all duration-500 bg-no-repeat rounded-[28px] bg-cover p-[32px] h-[680px] max-lg:h-[628px] max-sm-1:w-[260px] max-sm-1:h-[505px]">
+                            <div class="flex flex-col justify-between h-full">
+                                <div class="flex flex-col">
+                                    <p class="text-white font-semibold text-base mb-[8px] max-lg:text-[14px]">Hiburan
+                                    </p>
+                                    <p
+                                        class="text-white font-semibold text-[28px] leading-tight max-lg:text-[25px] max-sm-1:text-[20px]">
+                                        Bersantai.Menonton.
+                                        <br />
+                                        Bermain.
+                                    </p>
+                                </div>
+                                <button
+                                    class="h-9 w-9 rounded-full flex justify-center items-center bg-[#37373A] ml-auto"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        class="h-[18px] w-[18px] text-[#FEF5F5] fill-current"
+                                        class="card-cta-modal-button-small-icon card-modal-button-small-icon">
+                                        <path
+                                            d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z">
+                                        </path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 5 -->
+                    <div class="swiper-slide max-sm-1:w-[260px]">
+                        <div
+                            class="bg-[url('/src/assets/slider/fc_pencil__coz76i7lwsuq_large.jpg')] my-auto w-full cursor-pointer hover:scale-102 transition-all duration-500 bg-no-repeat rounded-[28px] bg-cover p-[32px] h-[680px] max-lg:h-[628px] max-sm-1:w-[260px] max-sm-1:h-[505px]">
+                            <div class="flex flex-col justify-between h-full">
+                                <div class="flex flex-col">
+                                    <p class="text-white font-semibold text-base mb-[8px] max-lg:text-[14px]">Apple
+                                        Pencil</p>
+                                    <p
+                                        class="text-white font-semibold text-[28px] leading-tight max-lg:text-[25px] max-sm-1:text-[20px]">
+                                        Dari kepala.
+                                        <br />
+                                        Turun ke layar.
+                                    </p>
+                                </div>
+                                <button
+                                    class="h-9 w-9 rounded-full flex justify-center items-center bg-[#37373A] ml-auto"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        class="h-[18px] w-[18px] text-[#FEF5F5] fill-current"
+                                        class="card-cta-modal-button-small-icon card-modal-button-small-icon">
+                                        <path
+                                            d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z">
+                                        </path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 6 -->
+                    <div class="swiper-slide max-sm-1:w-[260px]">
+                        <div
+                            class="bg-[url('/src/assets/slider/fc_ipados__urrua12bwaqy_large.jpg')] my-auto w-full cursor-pointer hover:scale-102 transition-all duration-500 bg-no-repeat rounded-[28px] bg-cover p-[32px] h-[680px] max-lg:h-[628px] max-sm-1:w-[260px] max-sm-1:h-[505px]">
+                            <div class="flex flex-col justify-between h-full">
+                                <div class="flex flex-col">
+                                    <p class="text-white font-semibold text-base mb-[8px] max-lg:text-[14px]">iPadOS +
+                                        Aplikasi</p>
+                                    <p
+                                        class="text-white font-semibold text-[28px] leading-tight max-lg:text-[25px] max-sm-1:text-[20px]">
+                                        Kekuatan super bawaan
+                                        <br />
+                                        siap pakai setiap hari.
+                                    </p>
+                                </div>
+                                <button
+                                    class="h-9 w-9 rounded-full flex justify-center items-center bg-[#37373A] ml-auto"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        class="h-[18px] w-[18px] text-[#FEF5F5] fill-current"
+                                        class="card-cta-modal-button-small-icon card-modal-button-small-icon">
+                                        <path
+                                            d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z">
+                                        </path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-full gap-4 mt-3">
+                <div class="px-custom-calc flex justify-end gap-3 mx-auto">
+                    <button class="btn-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                            <path
+                                d="M21.559,12.062 L15.618,17.984 L21.5221,23.944 C22.105,24.533 22.1021,25.482 21.5131,26.065 C21.2211,26.355 20.8391,26.4999987 20.4571,26.4999987 C20.0711,26.4999987 19.6851,26.352 19.3921,26.056 L12.4351,19.034 C11.8531,18.446 11.8551,17.4999987 12.4411,16.916 L19.4411,9.938 C20.0261,9.353 20.9781,9.354 21.5621,9.941 C22.1471,10.528 22.1451,11.478 21.5591,12.062 L21.559,12.062 Z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="btn-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                            <path
+                                d="M23.5587,16.916 C24.1447,17.4999987 24.1467,18.446 23.5647,19.034 L16.6077,26.056 C16.3147,26.352 15.9287,26.4999987 15.5427,26.4999987 C15.1607,26.4999987 14.7787,26.355 14.4867,26.065 C13.8977,25.482 13.8947,24.533 14.4777,23.944 L20.3818,17.984 L14.4408,12.062 C13.8548,11.478 13.8528,10.5279 14.4378,9.941 C15.0218,9.354 15.9738,9.353 16.5588,9.938 L23.5588,16.916 L23.5587,16.916 Z">
+                            </path>
+                        </svg></button>
+                </div>
+            </div>
+        </section>
+        <!-- bandingkan ipad -->
+        <section id="bandingkan-ipad" class="w-full bg-gray-Apple py-[150px] max-sm-1:py-[90px]">
+            <div
+                class="flex w-[87.5vw] justify-between items-end text-black-Apple pb-[80px] mx-auto max-w-[1200px] max-sm-1:flex-col max-sm-1:items-start max-sm-1:pb-[50px]">
+                <h1 class="font-semibold text-[56px] max-lg:text-[46px] max-sm-1:text-[32px] ">
+                    Jelajahi jajarannya.</h1>
+                <a class="font-normal text-lg no-underline hover:underline text-[#0066CC] max-lg:text-[16px]"
+                    href="">Bandingkan semua
+                    model</a>
+            </div>
+
+
+            <div class="swiper mySwiper" id="mySwiper2">
+                <div class="swiper-wrapper">
+                    <!-- iPad pro -->
+                    <div class="swiper-slide ipad text-[#1D1D1F]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex flex-col px-[10px] items-center max-sm-1:items-start">
+                                <img src="./assets/ipad/pt_ipad_pro__6bgrkek0jnm2_medium_2x.png" alt="ipad-pro"
+                                    class="w-[271px] h-[307px] hover:scale-102 transition-all duration-500 cursor-pointer mb-10 max-lg:w-[250px] max-lg:h-[283px] max-sm-1:w-[178px] max-sm-1:h-[201px]">
+                                <div class="flex gap-[6px] mb-5">
+                                    <span class="h-3 w-3 bg-[#E3E4E5] rounded-full shadow-3d-inset"></span>
+                                    <span class="h-3 w-3 bg-finish-space-black rounded-full"></span>
+                                </div>
+                                <p class="text-[26px] font-semibold max-sm-1:text-[20px]">iPad Pro</p>
+                                <p
+                                    class="text-center text-sm mt-3 h-[74px] px-[20px] max-sm-1:text-[13px] max-sm-1:px-[0px] max-sm-1:text-start">
+                                    Pengalaman
+                                    iPad terbaik dengan <br class="hidden max-mobile-L:block">
+                                    teknologi
+                                    paling
+                                    canggih.</p>
+                                <div
+                                    class="flex gap-6 mb-[54px] max-sm-1:mt-[30px] max-sm-1:mb-[30px] mx-auto max-sm-1:mx-0">
+                                    <button
+                                        class="py-2 px-5 bg-[#0077ED] rounded-full text-white max-sm-1:text-[14px] max-sm-1:py-[8px] max-sm-1:px-[15px]">Selengkapnya</button>
+                                    <button class="text-[#0077ED]">Beli</button>
+                                </div>
+                            </div>
+                            <hr class="border-t  border-gray-400" />
+                            <div class="grid grid-list gap-y-12 justify-center pt-[30px] w-full max-sm-1:justify-start">
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <h6 class="text-[28px] font-semibold max-sm-1:text-[21px]">13 atau 11"</h6>
+                                    <p class="text-sm max-sm-1:text-[14px] max-mobile-L:text-[12px]">Layar Ultra Retina
+                                        XDR</p>
+                                    <p class="text-sm mt-1 max-sm-1:text-[14px] max-mobile-L:text-[12px]">Teknologi
+                                        ProMotion</p>
+                                    <p class="text-sm mt-2 max-sm-1:text-[14px] max-mobile-L:text-[12px]">Warna luas P3
+                                    </p>
+                                    <p class="text-sm text-center mt-1 max-sm-1:text-[14px] max-mobile-L:text-[12px]">
+                                        Opsi layar nano-texture
+                                        <br> di
+                                        model 1 TB dan 2 TB
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-pro-icon/icon_chip_m4__b2ujor0cthv6_large_2x.png"
+                                        class="w-[36px] h-[56px]" alt="">
+                                    <p class="text-sm max-mobile-L:text-[12px]">Chip M4</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-pro-icon/ipadpro13_gen7_camera__dgh2hv5gfrqu_large_2x.png"
+                                        class="w-[36px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">Kamera
+                                        Wide 12 MP <br> Video 4K,
+                                        ProRes</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-pro-icon/ipad_front_camera_landscape__dl3oc157n50m_large_2x (2).png"
+                                        class="w-[30px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">Kamera
+                                        depan Ultra Wide 12 MP
+                                        lanskap</p>
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">Sistem
+                                        kamera TrueDepth</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-air-icon/applepencil_vertical_gen4_gen3__d7b45g01744m_large_2x.png"
+                                        class="w-[15px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">
+                                        Mendukung Apple Pencil Pro <br>
+                                        Mendukung Apple
+                                        Pencil (USB-C)</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-air-icon/magickeyboard_ipad__h1dmesqz8cq6_large_2x.png"
+                                        class="w-[47px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">
+                                        Mendukung Magic Keyboard untuk
+                                        iPad Pro (M4)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- iPad Air -->
+                    <div class="swiper-slide ipad text-[#1D1D1F]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex flex-col px-[10px] items-center max-sm-1:items-start">
+                                <img src="./assets/ipad/pt_ipad_air__cr381zljqdiu_medium_2x.png" alt="ipad-pro"
+                                    class="w-[271px] h-[307px] hover:scale-102 transition-all duration-500 cursor-pointer mb-10 max-lg:w-[246px] max-lg:h-[284px] max-sm-1:w-[178px] max-sm-1:h-[201px]">
+                                <div class="flex gap-[6px] mb-5">
+                                    <span class="h-3 w-3 bg-[#E5E0D8] rounded-full shadow-3d-inset"></span>
+                                    <span class="h-3 w-3 bg-[#D7E5E6] rounded-full shadow-3d-inset"></span>
+                                    <span class="h-3 w-3 bg-[#E3DEE9] rounded-full shadow-3d-inset"></span>
+                                    <span class="h-3 w-3 bg-[#6B696E] rounded-full shadow-3d-inset"></span>
+                                </div>
+                                <p class="text-[26px] font-semibold max-sm-1:text-[20px]">iPad Air</p>
+                                <p
+                                    class="text-center text-sm mt-3 h-[74px] px-[20px] max-sm-1:text-[13px] max-sm-1:px-[0px] max-sm-1:text-start">
+                                    Performa
+                                    hebat dalam <br> desain
+                                    tipis dan ringan.</p>
+                                <div
+                                    class="flex gap-6 mb-[54px] max-sm-1:mt-[30px] mx-auto max-sm-1:mx-0 max-sm-1:mb-[30px]">
+                                    <button
+                                        class="py-2 px-5 bg-[#0077ED] rounded-full text-white max-sm-1:text-[14px] max-sm-1:py-[8px] max-sm-1:px-[15px]">Selengkapnya</button>
+                                    <button class="text-[#0077ED]">Beli</button>
+                                </div>
+                            </div>
+                            <hr class="border-t  border-gray-400" />
+                            <div class="grid grid-list gap-y-12 justify-center pt-[30px] w-full max-sm-1:justify-start">
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <h6 class="text-[28px] font-semibold max-sm-1:text-[21px]">13 atau 12"</h6>
+                                    <p class="text-sm max-sm-1:text-[14px] max-mobile-L:text-[12px]">Layar Liquid Retina
+                                    </p>
+                                    <p class="text-sm mt-2 max-sm-1:text-[14px] max-mobile-L:text-[12px]">Warna luas P3
+                                    </p>
+                                    <p
+                                        class="text-sm text-center text-[#6e6e73] mt-2 max-sm-1:text-start max-sm-1:text-[13px] max-mobile-L:text-[12px]">
+                                        Jika diukur
+                                        secara diagonal
+                                        sebagai
+                                        persegi, <br class="hidden max-sm-1:block"> iPad Air
+                                        13 inci
+                                        memiliki ukuran <br class="hidden max-sm-1:block"> 12,9 inci dan iPad Air 11
+                                        inci memiliki ukuran 10,86 inci. <br class="hidden max-mobile-L:block"> Area
+                                        bidang layar berukuran lebih kecil.</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-air-icon/icon_chip_m2__7lsu9mg7n2aa_large_2x.png"
+                                        class="w-[36px] h-[56px]" alt="">
+                                    <p class="text-sm max-mobile-L:text-[12px]">Chip M2</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-air-icon/ipadair13_gen6_camera__f3tksk5vlmq2_large_2x (1).png"
+                                        class="w-[36px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">Kamera
+                                        Wide 12 MP <br> Video 4K
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-air-icon/ipad_front_camera_landscape__dl3oc157n50m_large_2x (1).png"
+                                        class="w-[30px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">Kamera
+                                        depan Ultra Wide 12 MP
+                                        lanskap</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-air-icon/applepencil_vertical_gen4_gen3__d7b45g01744m_large_2x.png"
+                                        class="w-[15px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">
+                                        Mendukung Apple Pencil Pro <br>
+                                        Mendukung Apple
+                                        Pencil (USB-C)</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-air-icon/magickeyboard_ipad__h1dmesqz8cq6_large_2x.png"
+                                        class="w-[47px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">
+                                        Mendukung Magic Keyboard</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ipad -->
+                    <div class="swiper-slide ipad text-[#1D1D1F]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex flex-col px-[10px] items-center max-sm-1:items-start">
+                                <img src="./assets/ipad/pt_ipad_10th_gen__ej5p5x6yf2gm_medium_2x.png" alt="ipad-pro"
+                                    class="w-[195px] h-[307px] hover:scale-102 transition-all duration-500 cursor-pointer mb-10 max-lg:w-[180px] max-lg:h-[284px] max-sm-1:w-[128px] max-sm-1:h-[201px]">
+                                <div class="flex gap-[6px] mb-5">
+                                    <span class="h-3 w-3 bg-[#E3E4E5] rounded-full shadow-3d-inset"></span>
+                                    <span class="h-3 w-3 bg-[#6480A3] rounded-full shadow-3d-inset"></span>
+                                    <span class="h-3 w-3 bg-[#DE6274] rounded-full shadow-3d-inset"></span>
+                                    <span class="h-3 w-3 bg-[#F0D95B] rounded-full shadow-3d-inset"></span>
+                                </div>
+                                <p class="text-[26px] font-semibold max-sm-1:text-[20px]">iPad</p>
+                                <p
+                                    class="text-center text-sm mt-3 h-[74px] px-[20px] max-sm-1:text-[13px] max-sm-1:px-[0px] max-sm-1:text-start">
+                                    iPad kaya
+                                    warna dengan layar <br class="hidden max-sm-1:block">
+                                    sepenuhnya untuk semua hal yang <br class="hidden max-sm-1:block"> Anda lakukan tiap
+                                    hari.</p>
+                                <div
+                                    class="flex gap-6 mb-[54px] max-sm-1:mt-[30px] mx-auto max-sm-1:mx-0 max-sm-1:mb-[30px]">
+                                    <button
+                                        class="py-2 px-5 bg-[#0077ED] rounded-full text-white max-sm-1:text-[14px] max-sm-1:py-[8px] max-sm-1:px-[15px]">Selengkapnya</button>
+                                    <button class="text-[#0077ED]">Beli</button>
+                                </div>
+                            </div>
+                            <hr class="border-t  border-gray-400" />
+                            <div
+                                class="grid grid-list gap-y-12 justify-center pt-[30px] w-full max-sm-1:justify-start ">
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <h6 class="text-[28px] font-semibold max-sm-1:text-[21px]">10,9"</h6>
+                                    <p class="text-sm max-mobile-L:text-[12px]">Layar Liquid Retina XDR</p>
+                                    <p class="text-sm max-mobile-L:text-[12px]">Warna sRGB</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-icon/icon_chip_a14__ew6phnozfs4m_large_2x.png"
+                                        class="w-[36px] h-[56px]" alt="">
+                                    <p class="text-sm max-mobile-L:text-[12px]">Chip A14 Bionic</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-icon/ipadair13_gen6_camera__f3tksk5vlmq2_large_2x.png"
+                                        class="w-[36px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">Kamera
+                                        Wide 12 MP <br> Video 4K
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-icon/ipad_front_camera_landscape__dl3oc157n50m_large_2x.png"
+                                        class="w-[30px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">Kamera
+                                        depan Ultra Wide 12 MP
+                                        lanskap</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-icon/applepencil_vertical_gen3_gen1__f7yqqbhlbpe2_large_2x.png"
+                                        class="w-[15px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">
+                                        Mendukung Apple Pencil (USB) <br>
+                                        Mendukung Apple
+                                        Pencil (generasi ke-1)</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-icon/magickeyboardfolio_ipad__eyxf7748v802_large_2x.png"
+                                        class="w-[47px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">
+                                        Mendukung Magic Keyboard Folio
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ipad mini -->
+                    <div class="swiper-slide ipad text-[#1D1D1F]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex flex-col px-[10px] items-center max-sm-1:items-start">
+                                <img src="./assets/ipad/pt_ipad_mini__f3iy3qb50gia_medium_2x.png" alt="ipad-pro"
+                                    class="w-[151px] h-[307px] hover:scale-102 transition-all duration-500 cursor-pointer mb-10 max-lg:w-[139px] max-lg:h-[284px] max-sm-1:w-[99px] max-sm-1:h-[201px]">
+                                <div class="flex gap-[6px] mb-5">
+                                    <span class="h-3 w-3 bg-[#E3DCD1] rounded-full shadow-3d-inset"></span>
+                                    <span class="h-3 w-3 bg-[#E8D1CF] rounded-full shadow-3d-inset"></span>
+                                    <span class="h-3 w-3 bg-[#B9B8D1] rounded-full shadow-3d-inset"></span>
+                                    <span class="h-3 w-3 bg-[#6B696E] rounded-full shadow-3d-inset"></span>
+                                </div>
+                                <p class="text-[26px] font-semibold max-sm-1:text-[20px]">iPad mini</p>
+                                <p
+                                    class="text-center text-sm mt-3 h-[74px] px-[20px] max-sm-1:text-[13px] max-sm-1:px-[0px] max-sm-1:text-start">
+                                    Pengalaman
+                                    iPad sepenuhnya dalam <br class="hidden max-sm-1:block">
+                                    desain ultra portabel.</p>
+                                <div
+                                    class="flex gap-6 mb-[54px] max-sm-1:mt-[30px] mx-auto max-sm-1:mx-0 max-sm-1:mb-[30px]">
+                                    <button
+                                        class="py-2 px-5 bg-[#0077ED] rounded-full text-white max-sm-1:text-[14px] max-sm-1:py-[8px] max-sm-1:px-[15px]">Selengkapnya</button>
+                                    <button class="text-[#0077ED]">Beli</button>
+                                </div>
+                            </div>
+                            <hr class="border-t  border-gray-400" />
+                            <div class="grid grid-list gap-y-12 justify-center pt-[30px] w-full max-sm-1:justify-start">
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <h6 class="text-[28px] font-semibold max-sm-1:text-[21px]">8,3"</h6>
+                                    <p class="text-sm max-mobile-L:text-[12px]">Layar Liquid Retina XDR</p>
+                                    <p class="text-sm max-mobile-L:text-[12px]">Warna luas P3</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-mini-icon/icon_chip_a15__dsg22feqeiuu_large.png"
+                                        class="w-[36px] h-[56px]" alt="">
+                                    <p class="text-sm max-mobile-L:text-[12px]">Chip A15 Bionic</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-mini-icon/ipadmini_gen6_camera__cwk7mc82wzma_large.png"
+                                        class="w-[36px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">Kamera
+                                        Wide 12 MP <br> Video 4K
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-mini-icon/ipad_front_camera__dan9au5hbu0y_large_2x.png"
+                                        class="w-[30px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">Kamera
+                                        depan Ultra Wide 12 MP</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-mini-icon/applepencil_vertical_gen2_gen3__cvvp729jcbki_large_2x.png"
+                                        class="w-[15px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">
+                                        Mendukung Apple Pencil (generasi
+                                        ke-2) <br> Mendukung
+                                        Apple
+                                        Pencil (USB-C)</p>
+                                </div>
+                                <div class="flex flex-col items-center max-sm-1:items-start">
+                                    <img src="./assets/ipad-mini-icon/magickeyboard__bn0eizfdbgly_large_2x.png"
+                                        class="w-[47px] h-[56px]" alt="">
+                                    <p class="text-center text-sm max-sm-1:text-start max-mobile-L:text-[12px]">
+                                        Mendukung papan ketik Bluetooth
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- <div class="grid grid-cols-4 container mx-auto">
+
+            </div> -->
+        </section>
+        <section id="aksesoris" class="w-full bg-gray-Apple pb-[20px]">
+            <div
+                class="flex justify-between items-end text-black-Apple pb-[80px] max-w-[1200px] mx-auto w-[87.5vw] max-sm-1:pb-[48px] max-sm-1:pt-[60px]">
+                <h1 class="font-semibold text-[56px] max-lg:text-[46px] max-sm-1:text-[32px]">Aksesori penting untuk <br
+                        class="hidden max-md:block max-sm-1:hidden"> iPad.</h1>
+            </div>
+
+            <div class="flex gap-6 px-custom-calc max-mb:hidden">
+                <div
+                    class="bg-white overflow-hidden rounded-[28px] px-8 pt-8 flex flex-col justify-between min-h-[592px] w-[100%] max-w-[590px] max-sm-1:min-h-[440px] max-md:min-h-[440px]">
+                    <div class="flex flex-col mt-6 text-center">
+                        <h3 class="text-[24px] font-semibold mb-3 max-md:text-[18px]">Apple Pencil
+                        </h3>
+                        <p class="text-[17px] mb-3 max-md:text-[13px]">Dari kepala. Turun ke layar.
+                        </p>
+                        <a class="font-normal text-lg no-underline hover:underline text-[#0066CC] max-md:text-[13px]"
+                            href="">Selengkapnya</a>
+                    </div>
+                    <div class="w-full flex justify-center">
+                        <img src="./assets/aksesori/bc_pencil__b1ze600aojyq_large.png"
+                            class="h-auto w-full min-w-[426px] max-lg:mr-[100px] max-md:mr-[150px]" alt="Apple Pencil">
+                    </div>
+                </div>
+                <div
+                    class="bg-white overflow-hidden rounded-[28px] px-8 pb-8 flex flex-col justify-between min-h-[592px] w-[100%] max-w-[590px] max-sm-1:min-h-[440px] max-md:min-h-[440px]">
+                    <div class="w-full flex justify-center">
+                        <img src="./assets/aksesori/bc_keyboard__b2j4vh67cw76_large.png"
+                            class="h-auto w-full min-w-[426px] max-lg:ml-[100px] max-md:ml-[150px]"
+                            alt="Apple keyboard">
+                    </div>
+
+                    <div class="flex flex-col mb-6 text-center">
+                        <h3 class="text-[24px] font-semibold mb-3  max-md:text-[18px]">Papan ketik
+                            untuk iPad</h3>
+                        <p class="text-[17px] mb-3 max-md:text-[13px]">Ketik sepuasnya. Bawa ke mana
+                            saja.</p>
+                        <a class="font-normal text-lg no-underline hover:underline text-[#0066CC] max-md:text-[13px]"
+                            href="">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile view Aksesoris-->
+            <div class="swiper mySwiper hidden max-mb:block" id="swiperBook">
+                <div class="swiper-wrapper mx-auto" id="book-slide">
+                    <div class="swiper-slide lebar">
+                        <div
+                            class="bg-white overflow-hidden rounded-[28px] px-8 pt-8 flex flex-col justify-between min-h-[492px] w-[100%] max-w-[590px]">
+                            <div class="flex flex-col mt-6 text-center">
+                                <h3 class="text-[24px] font-semibold mb-1 max-mb:text-[18px]">Apple Pencil</h3>
+                                <p class="text-[17px] mb-1 max-mb:text-[13px]">Dari kepala. Turun ke layar.</p>
+                                <a class="font-normal text-lg no-underline hover:underline text-[#0066CC] max-mb:text-[13px]"
+                                    href="">Selengkapnya</a>
+                            </div>
+                            <div class="w-full flex justify-center">
+                                <img src="./assets/aksesori/bc_pencil__b1ze600aojyq_large.png"
+                                    class="h-auto w-full min-w-[426px] mr-[150px]" alt="Apple Pencil">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide lebar">
+                        <div
+                            class="bg-white overflow-hidden rounded-[28px] px-8 flex flex-col justify-between min-h-[492px] w-[100%] max-w-[590px]">
+                            <div class="w-full flex justify-center">
+                                <img src="./assets/aksesori/bc_keyboard__b2j4vh67cw76_large.png"
+                                    class="h-auto w-full min-w-[426px] ml-[150px]" alt="Apple keyboard">
+                            </div>
+
+                            <div class="flex flex-col mb-6 text-center">
+                                <h3 class="text-[24px] font-semibold mb-1 max-mb:text-[18px]">Papan ketik untuk iPad
+                                </h3>
+                                <p class="text-[17px] mb-1 max-mb:text-[13px]">Ketik sepuasnya. Bawa ke mana saja.</p>
+                                <a class="font-normal text-lg no-underline hover:underline text-[#0066CC] max-mb:text-[13px]"
+                                    href="">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pasangan" class="w-full py-[150px] max-md:py-[90px]">
+            <div
+                class="flex w-[87.5vw] justify-between items-end text-black-Apple pb-[80px] mx-auto max-w-[1200px] max-sm-1:pb-[50px]">
+                <h1 class="font-semibold text-[56px] max-lg:text-[46px] max-sm-1:text-[32px]">Pasangan sempurna.</h1>
+            </div>
+
+            <div class="px-custom-calc mx-auto">
+                <div class="bg-gray-Apple rounded-[28px] flex items-center">
+                    <div id="max-h"
+                        class="max-w-[590px] max-lg-photo:max-w-full px-[80px] py-[160px] max-h-[820px] overflow-hidden max-lg-photo:px-[30px] max-lg-photo:py-[30px]">
+                        <div class="accordion">
+                            <div class="py-6 max-sm-1:py-5 max-sm-1:text-[26px] text-[28px] font-semibold flex justify-between items-center cursor-pointer max-mobile-L:text-[20px]"
+                                id="ipad-iphone" onclick="toogleAcordion(event)">iPad dan
+                                iPhone <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-5 transition-all">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                                </svg>
+                            </div>
+                            <div
+                                class="text-base mb-6 max-h-0 content overflow-hidden transition-all duration-500 ease-in-out max-mobile-L:text-[14px]">
+                                iPad adalah
+                                kanvas yang
+                                menghanyutkan dan
+                                sempurna untuk
+                                mengolah
+                                konten yang
+                                Anda ambil di iPhone Anda. Anda dapat merekam video dan foto di iPhone dan menggunakan
+                                layar besar iPad untuk mengedit, menambahkan animasi, dan banyak lagi. Anda juga dapat
+                                melanjutkan hal apa pun dengan Handoff.
+
+                                <img src="./assets/accordion-image/ia_ipad_iphone__cycr5ovszwmu_medium_2x.jpg"
+                                    alt="image accordion"
+                                    class="w-full h-auto hidden max-lg-photo:block max-mobile-L:mt-3">
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="py-6 text-[28px] font-semibold flex justify-between items-center cursor-pointer max-sm-1:py-5 max-sm-1:text-[26px] max-mobile-L:text-[20px]"
+                                id="ipad-mac" onclick="toogleAcordion(event)">iPad dan
+                                Mac <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-5 transition-all">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                                </svg>
+                            </div>
+                            <div
+                                class="text-base mb-6 max-h-0 content overflow-hidden transition-all duration-500 ease-in-out max-mobile-L:text-[14px]">
+                                iPad dan Mac
+                                dirancang untuk
+                                bekerja sama
+                                menciptakan perpaduan
+                                kreatif unggulan. Buat sketsa di iPad dan gambar itu akan langsung muncul di Mac dengan
+                                Sidecar. Kemudian gunakan iPad Anda untuk menggambar atau mengedit dengan Apple Pencil
+                                atau sebagai layar kedua. Anda bisa bekerja di berbagai tempat baru, dan ketika Anda
+                                kembali ke meja, Kontrol Universal memungkinkan Anda untuk menggunakan satu mouse atau
+                                trackpad dengan lancar di kedua perangkat tersebut.
+
+                                <img src="./assets/accordion-image/ia_ipad_mac__m9atjxkwpwyq_large_2x.jpg"
+                                    alt="image accordion"
+                                    class="w-full h-auto hidden max-lg-photo:block max-mobile-L:mt-3">
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="py-6 text-[28px] font-semibold flex justify-between items-center cursor-pointer max-sm-1:py-5 max-sm-1:text-[26px] max-mobile-L:text-[20px]"
+                                id="ipad-apple-watch" onclick="toogleAcordion(event)">iPad dan
+                                Apple Watch <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-5 transition-all">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                                </svg>
+                            </div>
+                            <div
+                                class="text-base mb-6 max-h-0 content overflow-hidden transition-all duration-500 ease-in-out max-mobile-L:text-[14px]">
+                                iPad
+                                adalah cara
+                                terbaik untuk
+                                mengoptimalkan
+                                olahraga Anda, dan
+                                Anda dapat melacak kemajuan Anda di Apple Watch. Lihat metrik pribadi dari Apple Watch
+                                yang terintegrasi di layar iPad Anda secara real time. Sensor di Apple Watch dipadukan
+                                dengan algoritme canggih untuk memberikan data yang membuat Anda tetap termotivasi. Dan
+                                lihat semuanya muncul di aplikasi Kesehatan di iPad.
+
+                                <img src="./assets/accordion-image/ia_ipad_watch__esa6mmvthtme_large_2x.jpg"
+                                    alt="image accordion"
+                                    class="w-full h-auto hidden max-lg-photo:block max-mobile-L:mt-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full h-full overflow-hidden flex items-center max-lg-photo:hidden">
+                        <img src="./assets/accordion-image/ia_ipad_iphone__cycr5ovszwmu_medium_2x.jpg"
+                            alt="image accordion" class="w-full h-auto min-w-[1100px] ml-[-40px]" id="image-accordion">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section id="list-ipad" class="w-full py-[150px] max-md:py-[90px] bg-[#FAFAFC]">
+            <div class="px-custom-calc mx-auto">
+                <div
+                    class="flex justify-between items-end text-black-Apple pb-[80px] mx-auto max-w-[1200px] w-[87.5vw]">
+                    <h1 class="font-semibold text-[48px] max-lg:text-[46px] max-sm-1:text-[32px]">iPad</h1>
+                </div>
+
+                <div class="flex gap-[88px] max-sm-1:flex-col max-sm-1:gap-[30px]">
+                    <div class="flex flex-col">
+                        <h3 class="text-[#6e6e73] text-xs mb-[14px]">Jelajahi iPad</h3>
+                        <ul class="font-semibold text-[28px] mb-[30px] max-lg:text-[24px]">
+                            <li>Jelajahi Semua Model iPad</li>
+                            <li>iPad Pro</li>
+                            <li>iPad Air</li>
+                            <li>iPad</li>
+                            <li>iPad mini</li>
+                            <li>Apple Pencil</li>
+                            <li>Papan ketik</li>
+                        </ul>
+                        <ul class="font-semibold text-base flex flex-col gap-[14px]">
+                            <li>Bandingkan iPad</li>
+                            <li>Mengapa iPad</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-[#6e6e73] text-xs mb-[20px]">Lainnya dari iPad</h3>
+                        <ul class="font-semibold text-sm mb-[30px] flex flex-col gap-4">
+                            <li>Dukungan iPad</li>
+                            <li>Produk AppleCare</li>
+                            <li>Pratinjau iPadOS 18</li>
+                            <li>Apple Intelligence</li>
+                            <li>Aplikasi buatan Apple - Apple</li>
+                            <li>iCloud+</li>
+                            <li>Pendidikan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#F5F5F7]">
+        <div class="max-w-[980px] w-full mx-auto flex flex-col max-lg:px-[22px]">
+            <div class="flex flex-col pt-[18px] pb-[11px] text-xs opacity-50 gap-[10px]">
+                <ol class="list-decimal px-[18px] flex flex-col gap-[10px]">
+                    <li>Aksesori dijual terpisah.</li>
+                    <li>Memerlukan paket data. 5G tersedia di pasar tertentu dan melalui operator tertentu. Untuk detail
+                        tentang dukungan 5G, hubungi operator Anda dan lihat apple.com/id/ipad/cellular.</li>
+                    <li>Layar memiliki sudut melengkung. Jika diukur secara diagonal sebagai persegi, iPad Pro 13 inci
+                        memiliki ukuran 13 inci, iPad Pro 11 inci memiliki ukuran 11,1 inci, iPad Air 13 inci memiliki
+                        ukuran 12,9 inci, iPad Air dan iPad (generasi ke-10) 11 inci memiliki ukuran 10,86 inci, dan
+                        iPad mini memiliki ukuran 8,3 inci. Area bidang layar berukuran lebih kecil.</li>
+                    <li>Memerlukan Adaptor USB-C ke Apple Pencil agar dapat digunakan dengan iPad (generasi ke-10).
+                        Tergantung ketersediaan.</li>
+                </ol>
+                <p>Aplikasi tersedia di App Store. Ketersediaan judul dapat berubah sewaktu-waktu.</p>
+                <p>“Lunch” ciptaan Jeff Melvin, MELVV, Maude Latour.</p>
+            </div>
+
+            <hr class="border-t border-black-Apple border-opacity-20 my-2">
+            <div class="flex items-center gap-2 mb-3">
+                <svg class="w-[16px] h-[44px]" viewBox="0 0 14 44" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z">
+                    </path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-[16px] h-[50px] opacity-55">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+                <p class="text-sm">iPad</p>
+            </div>
+            <!-- desktop -->
+            <div class="grid grid-cols-4 mb-14 max-md:hidden">
+                <div class="text-sm flex flex-col gap-3 max-lg:text-[12px]">
+                    <h3 class="font-semibold">Belanja dan Belajar</h3>
+                    <ul class="opacity-75 flex flex-col gap-2">
+                        <li>Mac</li>
+                        <li>iPad</li>
+                        <li>iPhone</li>
+                        <li>Watch</li>
+                        <li>AirPods</li>
+                        <li>TV & Rumah</li>
+                        <li>AirTag</li>
+                    </ul>
+
+                    <h3 class="font-semibold mt-2">Dompet Apple</h3>
+                    <ul class="opacity-75 flex flex-col gap-2">
+                        <li>Dompet</li>
+                    </ul>
+                </div>
+                <div class="text-sm flex flex-col gap-3 max-lg:text-[12px]">
+                    <h3 class="font-semibold">Akun</h3>
+                    <ul class="opacity-75 flex flex-col gap-2">
+                        <li>Kelola ID Apple Anda</li>
+                        <li>iCloud.com</li>
+                    </ul>
+
+                    <h3 class="font-semibold mt-2">Hiburan</h3>
+                    <ul class="opacity-75 flex flex-col gap-2">
+                        <li>Apple One</li>
+                        <li>Apple TV+</li>
+                        <li>Apple Music</li>
+                        <li>Apple Arcade</li>
+                        <li>Apple Fitness+</li>
+                        <li>Apple Podcasts</li>
+                        <li>Apple Books</li>
+                        <li>App Store</li>
+                    </ul>
+                </div>
+                <div class="text-sm flex flex-col gap-3 max-lg:text-[12px]">
+                    <h3 class="font-semibold">Untuk Bisnis</h3>
+                    <ul class="opacity-75 flex flex-col gap-2">
+                        <li>Apple dan Bisnis</li>
+                    </ul>
+
+                    <h3 class="font-semibold mt-2">Untuk Pendidikan</h3>
+                    <ul class="opacity-75 flex flex-col gap-2">
+                        <li>Apple dan Pendidikan</li>
+                    </ul>
+                </div>
+                <div class="text-sm flex flex-col gap-3 max-lg:text-[12px]">
+                    <h3 class="font-semibold">Nilai-nilai Apple</h3>
+                    <ul class="opacity-75 flex flex-col gap-2">
+                        <li>Aksesibilitas</li>
+                        <li>Pendidikan</li>
+                        <li>Lingkungan</li>
+                        <li>Privasi</li>
+                        <li>Rantai Pasokan</li>
+                    </ul>
+
+                    <h3 class="font-semibold mt-2">Tentang Apple</h3>
+                    <ul class="opacity-75 flex flex-col gap-2">
+                        <li>Newsroom</li>
+                        <li>Kepemimpinan Apple</li>
+                        <li>Investor</li>
+                        <li>Etika & Kepatuhan</li>
+                        <li>Acara</li>
+                        <li>Hubungi Apple</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- mobile -->
+            <div class="hidden max-md:block">
+                <div class="overflow-hidden border-t border-black-Apple border-opacity-20 border-solid">
+                    <button class="overflow-hidden w-full flex justify-between items-center my-2"
+                        onclick="toogleAcc(event)">
+                        <h3 class="text-sm">Belanja dan Belajar</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-[30px] h-[18px] transition-all">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="accordion-footer transition-all">
+                        <ul class="opacity-75 flex flex-col list-none gap-[10px] px-[14px] pb-[14px] pt-2 text-[12px]">
+                            <li>Mac</li>
+                            <li>iPad</li>
+                            <li>iPhone</li>
+                            <li>Watch</li>
+                            <li>AirPods</li>
+                            <li>TV & Rumah</li>
+                            <li>AirTag</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overflow-hidden border-t border-black-Apple border-opacity-20 border-solid">
+                    <button class="overflow-hidden  w-full flex justify-between items-center my-2"
+                        onclick="toogleAcc(event)">
+                        <h3 class="text-sm">Dompet Apple</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-[30px] h-[18px] transition-all">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="accordion-footer transition-all">
+                        <ul class="opacity-75 flex flex-col list-none gap-[10px] px-[14px] pb-[14px] pt-2 text-[12px]">
+                            <li>Dompet</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overflow-hidden border-t border-black-Apple border-opacity-20 border-solid">
+                    <button class="overflow-hidden  w-full flex justify-between items-center my-2"
+                        onclick="toogleAcc(event)">
+                        <h3 class="text-sm">Akun</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-[30px] h-[18px] transition-all">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="accordion-footer transition-all">
+                        <ul class="opacity-75 flex flex-col list-none gap-[10px] px-[14px] pb-[14px] pt-2 text-[12px]">
+                            <li>Kelola ID Apple Anda</li>
+                            <li>iCloud.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overflow-hidden border-t border-black-Apple border-opacity-20 border-solid">
+                    <button class="overflow-hidden  w-full flex justify-between items-center my-2"
+                        onclick="toogleAcc(event)">
+                        <h3 class="text-sm">Hiburan</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-[30px] h-[18px] transition-all">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="accordion-footer transition-all">
+                        <ul class="opacity-75 flex flex-col list-none gap-[10px] px-[14px] pb-[14px] pt-2 text-[12px]">
+                            <li>Apple One</li>
+                            <li>Apple TV+</li>
+                            <li>Apple Music</li>
+                            <li>Apple Arcade</li>
+                            <li>Apple Fitness+</li>
+                            <li>Apple Podcasts</li>
+                            <li>Apple Books</li>
+                            <li>App Store</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overflow-hidden border-t border-black-Apple border-opacity-20 border-solid">
+                    <button class="overflow-hidden  w-full flex justify-between items-center my-2"
+                        onclick="toogleAcc(event)">
+                        <h3 class="text-sm">Untuk Bisnis</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-[30px] h-[18px] transition-all">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="accordion-footer transition-all">
+                        <ul class="opacity-75 flex flex-col list-none gap-[10px] px-[14px] pb-[14px] pt-2 text-[12px]">
+                            <li>Apple dan Bisnis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overflow-hidden border-t border-black-Apple border-opacity-20 border-solid">
+                    <button class="overflow-hidden  w-full flex justify-between items-center my-2"
+                        onclick="toogleAcc(event)">
+                        <h3 class="text-sm">Untuk Pendidikan</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-[30px] h-[18px] transition-all">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="accordion-footer transition-all">
+                        <ul class="opacity-75 flex flex-col list-none gap-[10px] px-[14px] pb-[14px] pt-2 text-[12px]">
+                            <li>Apple dan Pendidikan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overflow-hidden border-t border-black-Apple border-opacity-20 border-solid">
+                    <button class="overflow-hidden w-full flex justify-between items-center my-2"
+                        onclick="toogleAcc(event)">
+                        <h3 class="text-sm">Nilai-Nilai Apple</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-[30px] h-[18px] transition-all">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="accordion-footer transition-all">
+                        <ul class="opacity-75 flex flex-col list-none gap-[10px] px-[14px] pb-[14px] pt-2 text-[12px]">
+                            <li>Aksesibilitas</li>
+                            <li>Pendidikan</li>
+                            <li>Lingkungan</li>
+                            <li>Privasi</li>
+                            <li>Rantai Pasokan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overflow-hidden border-y border-black-Apple border-opacity-20 border-solid">
+                    <button class="overflow-hidden  w-full flex justify-between items-center my-2"
+                        onclick="toogleAcc(event)">
+                        <h3 class="text-sm">Tentang Apple</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-[30px] h-[18px] transition-all">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div class="accordion-footer transition-all">
+                        <ul class="opacity-75 flex flex-col list-none gap-[10px] px-[14px] pb-[14px] pt-2 text-[12px]">
+                            <li>Newsroom</li>
+                            <li>Kepemimpinan Apple</li>
+                            <li>Investor</li>
+                            <li>Etika & Kepatuhan</li>
+                            <li>Acara</li>
+                            <li>Hubungi Apple</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <section class="mb-3 max-md:mt-5">
+                <div class="text-sm"><a href="#" class="underline text-[#0066CC]">Temukan retailer</a><span
+                        class="opacity-50"> di dekat
+                        anda</span></div>
+
+                <hr class="border-t opacity-20 border-black-Apple my-3 max-md:hidden">
+
+                <div class="flex justify-between text-sm max-md:flex-col max-md:mt-3">
+                    <p class="opacity-75 max-md:opacity-50 max-md:text-[12px]">Hak cipta © 2024 Apple Inc. Seluruh hak
+                        cipta dilindungi undang-undang.</p>
+
+                    <div class="flex gap-2 max-lg:hidden max-md:text-[12px]">
+                        <p>Kebijakan Privasi</p>
+                        <p>Ketentuan Penggunaan</p>
+                        <p>Legal</p>
+                        <p>Peta Situs</p>
+                    </div>
+
+                    <p class="opacity-75 max-md:order-first max-md:mb-4">Indonesia</p>
+                </div>
+                <div class="hidden text-sm gap-2 max-lg:flex max-md:text-[12px] max-md:hidden">
+                    <p>Kebijakan Privasi</p>
+                    <p>Ketentuan Penggunaan</p>
+                    <p>Legal</p>
+                    <p>Peta Situs</p>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
