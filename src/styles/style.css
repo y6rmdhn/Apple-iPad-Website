@@ -939,19 +939,14 @@ video {
   display: none;
 }
 
-.size-6 {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.size-4 {
-  width: 1rem;
-  height: 1rem;
-}
-
 .size-5 {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .h-3 {
@@ -1366,30 +1361,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/chip__cpj93oio1oya_large\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/chip__cpj93oio1oya_large.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/fc_creativity__gcfv7x90x42u_large\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/fc_creativity__gcfv7x90x42u_large.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/fc_ipados__urrua12bwaqy_large\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/fc_ipados__urrua12bwaqy_large.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/fc_learning__es1tt702bf6u_large\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/fc_learning__es1tt702bf6u_large.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/fc_pencil__coz76i7lwsuq_large\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/fc_pencil__coz76i7lwsuq_large.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/slider\/fc_productivity__d55aee5so6ky_large\.jpg\'\)\] {
-  background-image: url('/src/assets/slider/fc_productivity__d55aee5so6ky_large.jpg');
 }
 
 .bg-cover {
@@ -2079,15 +2050,15 @@ video {
     display: block;
   }
 
+  .max-mobile-L\:text-\[12px\] {
+    font-size: 12px;
+  }
+
   .max-mobile-L\:text-\[14px\] {
     font-size: 14px;
   }
 
   .max-mobile-L\:text-\[20px\] {
     font-size: 20px;
-  }
-
-  .max-mobile-L\:text-\[12px\] {
-    font-size: 12px;
   }
 }
