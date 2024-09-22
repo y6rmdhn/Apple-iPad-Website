@@ -8,7 +8,7 @@ Apple landingpage using HTML, Tailwind CSS, and JS for Project Course
 
 ## Screenshots
 
-![Website Screenshot](./assets/readme-img/ipad-website.png)
+![Website Screenshot](./src/assets/readme-img/ipad-website.png)
 
 ## Tech Stack
 
