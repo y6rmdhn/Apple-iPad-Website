@@ -146,12 +146,14 @@ const menuMobileList = document.getElementById('menu-mobile-list');
         menuMobileList.classList.toggle('opacity-100');
 
         if(menuMobileList.classList.contains('opacity-100')){
+          document.body.classList.add('overflow-hidden');
           menuMobileList.classList.remove('delay-100');
           menuMobileList.classList.add('delay-300');
           scrollTarget.classList.remove('delay-300');
           hiddenSvg.classList.add('delay-300'); 
           hiddenSearchsvg.classList.add('delay-300');
         }else{
+          document.body.classList.remove('overflow-hidden');
           menuMobileList.classList.remove('delay-300');
           menuMobileList.classList.add('delay-100');
           scrollTarget.classList.add('delay-300');
